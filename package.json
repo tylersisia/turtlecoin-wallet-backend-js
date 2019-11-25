@@ -1,5 +1,5 @@
 {
-  "name": "turtlecoin-wallet-backend",
+  "name": "chimera-wallet-backend",
   "version": "4.0.8",
   "description": "",
   "main": "dist/lib/index.js",
