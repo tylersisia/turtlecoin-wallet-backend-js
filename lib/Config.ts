@@ -211,7 +211,7 @@ export class Config implements IConfig {
      * The address prefix your coin uses - you can find this in CryptoNoteConfig.h.
      * In TurtleCoin, this converts to TRTL
      */
-    public addressPrefix: number = 3914525;
+    public addressPrefix: number = 4141013;
 
     /**
      * Request timeout for daemon operations in milliseconds
@@ -221,7 +221,7 @@ export class Config implements IConfig {
     /**
      * The block time of your coin, in seconds
      */
-    public blockTargetTime: number = 30;
+    public blockTargetTime: number = 60;
 
     /**
      * How often to process blocks, in millseconds
@@ -248,7 +248,7 @@ export class Config implements IConfig {
     /**
      * Your coins 'ticker', generally used to refer to the coin, i.e. 123 TRTL
      */
-    public ticker: string = 'TRTL';
+    public ticker: string = 'CMRA';
 
     /**
      * Most people haven't mined any blocks, so lets not waste time scanning
@@ -259,7 +259,7 @@ export class Config implements IConfig {
     /**
      * The minimum fee allowed for transactions, in ATOMIC units
      */
-    public minimumFee: number = 10;
+    public minimumFee: number = 100;
 
     /**
      * Mapping of height to mixin maximum and mixin minimum
@@ -273,7 +273,7 @@ export class Config implements IConfig {
 
         /* At height of 800000, static mixin of 3 */
         new MixinLimit(800000, 3),
-    ], 3 /* Default mixin of 3 before block 440,000 */);
+    ], 1 /* Default mixin of 3 before block 440,000 */);
 
     /**
      * The length of a standard address for your coin
